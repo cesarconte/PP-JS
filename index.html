@@ -1,1 +1,153 @@
- 
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primeros Pasos JavaScript</title>
+  <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <!-- Logo -->
+      <div class="javascript-logo"><a href="#" class="logo"><img src="./src/media/Unofficial_JavaScript_logo.svg"
+            alt="JavaScript logo" class="logo-svg" width="60px" height="60px"></a>
+      </div>
+
+      <!-- Navigation Menu -->
+      <ul class="nav-links">
+
+        <!-- Navigation Menus -->
+        <div class="menu">
+
+          <li><a href="#section__variables">VARIABLES</a></li>
+          <li><a href="#section__funciones">FUNCIONES</a></li>
+          <li><a href="#section__objetos">OBJETOS</a></li>
+          <li><a href="#section__arrays">ARRAYS</a></li>
+          <li><a href="#section__dom">DOM</a></li>
+          </li>
+
+        </div>
+
+      </ul>
+
+    </nav>
+  </header>
+  <main>
+    <h1>PRIMEROS PASOS CON JAVASCRIPT</h1>
+    <section class="section" id="section__variables">
+      <h2>1. Variables</h2>
+      <h3>1.1 Crear variables de diferentes tipos de datos: número, cadena de texto, booleano e imprimir su valor por
+        la pantalla del navegador y la consola.</h3>
+      <p id="numbers"></p>
+      <p id="strings"></p>
+      <p id="string1"></p>
+      <p id="boolean">- Esta es un ejemplo de variable booleana: let boolean2 = false
+      </p>
+      <p id="boolean1"></p>
+      <h3>1.2 De las variables declaradas anteriormente, identifica las que son de tipo integer y realiza operaciones
+        matemáticas básicas con las variables creadas.</h3>
+      <p id="multiplication"></p>
+      <p id="division"></p>
+      <p id="floorDivision"></p>
+      <h3>1.3 De las variables declaradas, identifica las que son de tipo texto y concatena dichas
+        cadenas.</h3>
+      <p id="concatenarStrings"></p>
+    </section>
+
+    <section class="section" id="section__funciones">
+      <h2>2. Funciones</h2>
+
+      <h3>2.1 Función que imprima por la pantalla del navegador y la consola el mensaje "Hola, [nombre]" con un
+        parámetro
+        para
+        el
+        nombre.</h3>
+      <p id="hello"></p>
+      <h3>2.2 Función que reciba como parámetros dos números y que devuelva la suma de ellos. Deberá imprimir el
+        resultado
+        por
+        la
+        pantalla del navegador y la consola.</h3>
+      <p id="resultado"></p>
+      <h3>2.3 Función que determine si un número es par o impar. Deberás imprimir el resultado por la pantalla del
+        navegador
+        y la
+        consola.</h3>
+      <p id="resultado2"></p>
+    </section>
+
+    <section class="section" id="section__objetos">
+      <h2>3. Objetos</h2>
+      <h3>3.1 Crear un objeto carro haciendo la abstracción de sus atributos y un objeto anidado.</h3>
+      <p id="resultado3"></p>
+      <h3>3.2 Función que devuelva la marca del carro.</h3>
+      <p id="resultado4"></p>
+      <h3>3.3 Función que devuelva la cantidad de puertas que tiene el carro.</h3>
+      <p id="resultado5"></p>
+      <h3>3.4 Función que devuelva un atributo del objeto anidado.</h3>
+      <p id="resultado6"></p>
+    </section>
+    <section class="section" id="section__arrays">
+      <h2>4. Arrays</h2>
+      <h3>4.1 Crear un array de 10 números.</h3>
+      <p id="array1"></p>
+      <h3>4.3 Crear una función que añada un número al array.</h3>
+      <p id="resultado7"></p>
+      <h3>4.4 Crear una función que elimine los números pares de ese array.</h3>
+      <p id="resultado8"></p>
+      <h3>4.5 Crear una función que devuelva el número mayor de un array.</h3>
+      <p id="resultado9"></p>
+      <h3>4.6 Crear una función que devuelva el número menor de un array.</h3>
+      <p id="resultado10"></p>
+      <h3>4.7 Crear un función que convierta en minúsculas todas las letras de un texto.</h3>
+      <p id="resultado11"></p>
+      <h3>4.8 Crear una función que convierta en mayúsculas todas las letras de un texto.</h3>
+      <p id="resultado12"></p>
+      <h3>4.9 Crear una función que reciba un array de nombres y que convierta la primera letra de cada nombre en
+        mayúscula.
+      </h3>
+      <p id="resultado13"></p>
+    </section>
+    <section class="section" id="section__dom">
+      <h2>5. Manipulación del DOM</h2>
+      <h3>5.1 Crear un botón en HTML y usar JavaScript para mostrar un mensaje cuando se hace clic.</h3>
+      <p>Haz click sobre el botón para saber la hora y la fecha</p>
+      <button class="btn" id="myBtn">¿Qué hora es?</button>
+      <p id="demo1"></p>
+      <h3>5.2 Cambiar el contenido de un elemento HTML mediante JavaScript.</h3>
+      <p id="myParagraph1" onclick="changeContent()">Haz click sobre mí</p>
+      <p onclick="this.innerHTML='Ooops!... Gracias por hacer click'">Click on this text!</p>
+      <h3>5.3 Ocultar y mostrar elementos HTML utilizando JavaScript.</h3>
+      <button class="btn" onclick="toggleVisibility()">Mostrar/ocultar</button>
+      <p id="myParagraph2">Este es un párrafo para mostrar/ocultar</p>
+      <h3>5.4 Crear un array de 10 nombres, y una función que imprime en pantalla una lista con los nombres del array de
+        nombres.</h3>
+      <p id="demo3"></p>
+      <h3>5.6 Crear un array de números, y una función que pinte en pantalla cuántos números tiene el array de números.
+      </h3>
+      <p id="demo4"></p>
+      <p id="demo5"></p>
+      <h3>5.7 Crea los nodos necesarios para imprimir un formulario.</h3>
+      <div id="formulario"></div>
+      <h3>5.8 Crea los nodos necesarios para imprimir una tabla, e imprime cada elemento del objeto dentro de la tabla
+        que
+        creaste
+        anteriormente.</h3>
+      <div id="table-container"></div>
+    </section>
+
+  </main>
+
+
+  <script src="src/variables.js" defer></script>
+  <script src="src/functions.js" defer></script>
+  <script src="src/objects.js" defer></script>
+  <script src="src/arrays.js" defer></script>
+  <script src="src/dom.js" defer></script>
+</body>
+
+</html>
